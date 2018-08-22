@@ -1,0 +1,28 @@
+#!/bin/bash
+clear
+
+CHOICE=$(
+whiptail --title Systems --menu "Make your choice" 16 78 5 \
+ "1" "Option 1" \
+ "2" "Option 2" \
+ "3" "Option 3" \
+ "4" "Option 4" \
+ "5" "Option 5" \
+)
+case $CHOICE in
+"1") clear
+echo "Command for Option 1"
+;;
+"2") clear
+echo "Command for Option 2"
+;;
+"3") clear
+echo "Command for Option 3"
+;;
+"4") clear
+echo "Command for Option 4"
+;;
+"5") clear
+echo "Command for Option 5"
+;;
+esac
